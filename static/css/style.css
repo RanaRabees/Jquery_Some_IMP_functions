@@ -1,0 +1,366 @@
+/* ================================NEELI NAV============================ */
+
+
+@import url('../api/Fonts/Algerian/Algerian\ Regular.ttf');
+
+/* flower navbar */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+#start {
+    margin-bottom: 0px;
+}
+
+#logo {
+    width: 30%;
+    height: 80px;
+    background-color: aqua;
+    display: inline;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+
+
+}
+
+@media screen and (max-width: 434px) {
+    #logo {
+        display: none;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    #menu {
+        width: 90%;
+    }
+}
+
+#logo h1 {
+    font-size: xx-large;
+    font-family: algerian;
+    position: relative;
+    padding-left: 145px;
+}
+
+@media screen and (max-width: 1065px) {
+    #logo h1 {
+        display: none;
+    }
+}
+
+#logo img {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 77px;
+    width: 120px;
+    height: 80px;
+    /* padding-left: 30px; */
+}
+
+@media screen and (max-width: 1065px) {
+    #logo img {
+        display: none;
+    }
+}
+
+#menu {
+    width: 70%;
+    height: 80px;
+    background-color: blueviolet;
+    position: absolute;
+    right: 0px;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 30px;
+
+}
+
+/* =====================================NAV END============================ */
+
+/* ======================================DAS DIV CARD========================= */
+
+#maindiv {
+    margin: 0px;
+    padding: 0px;
+    border: 5px solid rgb(209, 9, 9);
+    background-color: chartreuse;
+
+}
+
+#stbanner {
+    margin: 20px;
+    padding: 20px;
+    height: 100px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+    /* background-image: url('https://unsplash.com/photos/Vd9QJM0mATg,mountains,waterfall,deep ocean'); */
+    background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlJTIwbGFuZHNjYXBlJTIwMTIwMHgxMDB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    background-size: 100% 100%;
+
+}
+
+
+#first {
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+}
+
+#f1 {
+    border: 5px solid black;
+    background-image: url('../image/109.jpg');
+    background-size: cover;
+}
+
+#f2 {
+    border: 5px solid black;
+    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJlJTIwbGFuZHNjYXBlJTIwMTIwMHgxMDB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    background-size: 100% 100%;
+}
+
+#f3 {
+    border: 5px solid black;
+    /* background-image: url('https://source.unsplash.com/1200x900/?digging,construction'); */
+    background-image: url('../image/104.jpg');
+    background-size: 100% 100%;
+}
+
+#second {
+    margin: 20px;
+    padding: 20px;
+    height: 700px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+}
+
+
+#third {
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+}
+
+
+#t1 {
+    border: 5px solid black;
+    background-color: chocolate;
+}
+
+#t2 {
+    border: 5px solid black;
+    background-color: darkcyan;
+}
+
+#t3 {
+    border: 5px solid black;
+    background-color: darkmagenta;
+}
+
+#ninth {
+    margin: 20px;
+    padding: 20px;
+    height: 200px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+}
+
+
+#fifth {
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+}
+
+#fr5 {
+    border: 5px solid black;
+}
+
+#fr6 {
+    border: 5px solid black;
+}
+
+#fr7 {
+    border: 5px solid black;
+}
+
+#fr8 {
+    border: 5px solid black;
+}
+
+
+#sixth {
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+}
+
+#seventh {
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+}
+
+#sx5 {
+    border: 5px solid black;
+}
+
+#sx6 {
+    border: 5px solid black;
+}
+
+#sx7 {
+    border: 5px solid black;
+}
+
+#sx8 {
+    border: 5px solid black;
+}
+
+
+#footer {
+    margin: 20px;
+    padding: 20px;
+    height: 150px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+}
+
+#ten {
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 10px solid black;
+    gap: 10px;
+}
+
+
+#tn1 {
+    border: 5px solid black;
+}
+
+#tn2 {
+    border: 5px solid black;
+}
+
+/* =======================================DAS DIV END========================= */
+
+
+/* ======================================VIDEO SLIDER=========================== */
+
+
+
+.RBScontainer {
+    width: 100%;
+    height: 570px;
+    position: relative;
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+
+.RBScontainer .slider {
+    position: relative;
+    /* top: 20px; */
+    left: 0;
+    bottom: 20px;
+    width: 800px;
+    height: 800px;
+
+}
+
+.RBScontainer ul {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.RBScontainer ul li {
+    list-style: none;
+    cursor: pointer;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+.RBScontainer ul li video {
+    width: 200px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.RBScontainer ul li video:hover {
+    transform: scale(1.1);
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#mainvideo{
+    width: 1000px;
+    height: 800px;
+}
+
+/* ======================================VIDEO SLIDER END=========================== */
