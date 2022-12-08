@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <script src="static/js/jquery-3.6.1.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div id="start">
+        <nav>
+            <div id="logo">
+                <img src="./static/image/116.jpg" alt="logo">
+                <h1> <b>RANA G</b> </h1>
+
+            </div>
+            <div id="menu">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>INFO</li>
+                    <li>CONTACT</li>
+                    <li>GALLERY</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br><br><br><br>
+    <div id="maindiv" class="container-fluid">
+        <div id="stbanner">
+            <div id="banner">col1</div>
+        </div>
+
+        <div id="first">
+            <div id="f1">col1</div>
+            <div id="f2">col2</div>
+            <div id="f3">col3</div>
+        </div>
+
+        <div id="second">
+            <div id="s1">col1</div>
+
+            <!-- video slider -->
+
+            <div>
+                <div class="RBScontainer">
+                    <video id="mainvideo" controls src="./static/video/61.mp4" class="slider" autoplay loop muted>
+                    </video>
+                    <ul>
+                        <li onclick="videoslider('./static/video/20.mkv')"> <video src="./static/video/20.mkv">
+                            </video> </li>
+                        <li onclick="videoslider('./static/video/21.mkv')"> <video src="./static/video/21.mkv">
+                            </video> </li>
+                        <li onclick="videoslider('./static/video/28.mp4')"> <video src="./static/video/28.mp4">
+                            </video> </li>
+                        <li onclick="videoslider('./static/video/19.mkv')"> <video src="./static/video/19.mkv">
+                            </video> </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="third">
+            <div id="t1">
+                <button id="batn">slow</button>
+                <button id="batun">Slower</button>
+                <button id="batuun">Slowest</button>
+                <!-- <input type="text" placeholder="To change color press C" id="inp"> -->
+                <p id="lorem" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                    explicabo nulla
+                    voluptas! Ab unde facere similique quibusdam quisquam doloribus, deleniti adipisci eum, non in sint
+                    nulla, hic obcaecati autem expedita?</p>
+                <p id="manhoos">repellendus harum porro consectetur natus?
+            </div>
+            <div id="t2">col2</div>
+            <div id="t3">col3</div>
+        </div>
+
+
+
+        <!-- <script>
+            $(document).ready(function () {
+                $('#t1').click(function () {
+                    alert('this is first jquery msg');
+                });
+            });
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(function () {
+                $('#t1').mouseenter(() => {
+                    alert("this is fat arrow with mouse enter")
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(() => {
+                $('#t1').mouseleave(() => {
+                    alert("this is double fat arrow with mouse move")
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(()=>{
+                $('#t1').mousedown(()=>{
+                    alert("this is mouse down")
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(() => {
+                $('#inp').keypress(() => {
+                    document.getElementById("t1").style.backgroundColor = "red";
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(() => {
+                $('#inp').keyup(() => {
+                    document.getElementById('t1').style.backgroundColor='green';
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(()=>{
+                $('#inp').keydown(()=>{
+                    document.getElementById('t1').style.backgroundColor='yellow';
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(() => {
+                $('#batn').click(() => {
+                    document.getElementById("t1").style.fontFamily='algerian';
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(()=>{
+                $('#batn').click(()=>{
+                    $('div').remove('#t2');
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(()=>{
+                $('#batn').click(()=>{
+                    $('p').remove('#lorem');
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(()=>{
+                $('#batn').click(()=>{
+                    $('h3').remove('#manhoos');
+                })
+            })
+        </script> -->
+
+        <!-- <script>
+            $(document).ready(()=>{
+                $('#batn').click(()=>{
+                    $('h3').hide('#manhoos');
+                })
+                $('#batun').click(()=>{
+                    $('h3').show('#manhoos');
+                })
+            })
+        </script> -->
+
+        <!-- +++++++++++++++++++++++++++++++SHOW & HIDE FUNCTION++++++++++++++++++++++++++++ -->
+
+        <!-- <script>
+            $(document).ready(()=>{
+                $('#batn').click(()=>{
+                    $('#manhoos').hide(1000);
+                })
+                $('#batun').click(()=>{
+                    $('#manhoos').show(3000);
+                })
+            })
+        </script> -->
+
+
+        <!-- +++++++++++++++++++++++++++FADE IN FUNCTION/SLOW/SLOWER/SLOWEST+++++++++++++++++++ -->
+
+        <!-- <script>
+            $(document).ready(() => {
+                $('#batn').click(() => {
+                    $('#lorem').fadeIn();
+                })
+                $('#batun').click(() => {
+                    $('#lorem').fadeIn("slow");
+                })
+                $('#batuun').click(() => {
+                    $('#lorem').fadeIn(6000);
+                })
+            })
+        </script> -->
+
+        <!-- =====================================FADE OUT FUNCTION================== -->
+
+        <!-- <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    $("#div1").fadeOut();
+                    $("#div2").fadeOut("slow");
+                    $("#div3").fadeOut(3000);
+                });
+            });
+        </script>
+        </head>
+
+        <body>
+
+            <p>Demonstrate fadeOut() with different parameters.</p>
+
+            <button>Click to fade out boxes</button><br><br>
+
+            <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+            <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+            <div id="div3" style="width:80px;height:80px;background-color:blue;"></div> -->
+
+        <!-- =====================================FADE TO FUNCTION MEAN OPACITY CONTROLLER================== -->
+
+        <!-- <script>
+                $(document).ready(function(){
+                  $("button").click(function(){
+                    $("#div1").fadeTo("slow", 0.15);
+                    $("#div2").fadeTo("slow", 0.4);
+                    $("#div3").fadeTo("slow", 0.13);
+                  });
+                });
+                </script>
+                   
+                <p>Demonstrate fadeTo() with different parameters.</p>
+                
+                <button>Click to fade boxes</button><br><br>
+                
+                <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+                <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+                <div id="div3" style="width:80px;height:80px;background-color:blue;"></div> -->
+
+
+
+        <!-- =====================================DROP DOWN SLOW FUNCTION================== -->
+
+        <!-- <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+              $("#panel").slideDown("slow");
+            });
+          });
+          </script>
+          <style> 
+          #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+          }
+          
+          #panel {
+            padding: 50px;
+            display: none;
+          }
+          </style>         
+          <body>
+           
+          <div id="flip">Click to slide down panel</div>
+          <div id="panel">Hello world!</div>
+          
+          </body> -->
+
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+
+        <!-- <script>
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideToggle("slow");
+                });
+            });
+        </script>
+        <style>
+            #panel,
+            #flip {
+                margin-left: 250px;
+                width: 800px;
+                padding: 5px;
+                text-align: center;
+                background-color: #e5eecc;
+                border: solid 1px #c3c3c3;
+            }
+
+            #panel {
+
+                margin-left: 250px;
+                width: 800px;
+                height: 400px;
+                /*padding: 500px;*/
+                display: none;
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <div id="flip">Click to slide the panel down or up</div>
+            <div id="panel">
+                <ul>
+                    <a href="" id="id1">HOME</a><br>
+                    <a href="" id="id2">HOME</a><br>
+                    <a href="" id="id3">HOME</a><br>
+                    <a href="" id="id4">HOME</a><br>
+                    <a href="" id="id5">HOME</a><br>
+                </ul>
+            </div>
+
+        </body> -->
+
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+
+        
+
+
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+        <!-- ======================================TOGGLE SLIDE BUTTON======================= -->
+
+
+        <body>
+            <div id="fifth">
+                <div id="fr5">col5</div>
+                <div id="fr6">col6</div>
+                <div id="fr7">col7</div>
+                <div id="fr8">col8</div>
+            </div>
+
+            <div id="sixth">
+                <div id="ff1">col1</div>
+            </div>
+
+            <div id="seventh">
+                <div id="sx5">col5</div>
+                <div id="sx6">col6</div>
+                <div id="sx7">col7</div>
+                <div id="sx8">col8</div>
+            </div>
+
+            <div id="ninth">
+                <div id="n1">col1</div>
+            </div>
+
+            <div id="ten">
+                <div id="tn1">col1</div>
+                <div id="tn2">col2</div>
+            </div>
+
+            <div id="footer">
+                <div id="foot">col1</div>
+            </div>
+    </div>
+
+    <script>
+        function videoslider(links) {
+            document.querySelector(".slider").src = links;
+        }
+    </script>
+</body>
+
+</html>
